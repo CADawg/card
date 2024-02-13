@@ -1,0 +1,79 @@
+{
+  "en": {
+    "hi": "Hi",
+    "software_developer": "Software Developer",
+    "machine_translation_used": "Please Note: This website uses machine translation and so may not be 100% accurate.",
+    "country_flag": "gb",
+    "alt_text": "Flag of the United Kingdom"
+  },
+  "gd": {
+    "hi": "Halo",
+    "software_developer": "Leasaiche Bathar-bog",
+    "machine_translation_used": "Thoir an aire: Tha an làrach-lìn seo a' cleachdadh eadar-theangachadh inneal agus mar sin is dòcha nach bi e ceart gu leòr.",
+    "country_flag": "gb-sct",
+    "alt_text": "Bratach na Rìoghachd Aonaichte"
+  },
+  "fr": {
+    "hi": "Salut",
+    "software_developer": "Développeur de Logiciels",
+    "machine_translation_used": "Veuillez noter : Ce site Web utilise la traduction automatique et peut donc ne pas être tout à fait précis.",
+    "country_flag": "fr",
+    "alt_text": "Drapeau de la France"
+  },
+  "nl": {
+    "hi": "Hallo",
+    "software_developer": "Softwareontwikkelaar",
+    "machine_translation_used": "Let op: Deze website maakt gebruik van machinale vertaling en is daarom mogelijk niet 100% nauwkeurig.",
+    "country_flag": "nl",
+    "alt_text": "Vlag van Nederland"
+  },
+  "de": {
+    "hi": "Hallo",
+    "software_developer": "Softwareentwickler",
+    "machine_translation_used": "Bitte beachten Sie: Diese Website verwendet maschinelle Übersetzung und ist daher möglicherweise nicht zu 100% genau.",
+    "country_flag": "de",
+    "alt_text": "Flagge Deutschlands"
+  },
+  "es": {
+    "hi": "Hola",
+    "software_developer": "Desarrollador de Software",
+    "machine_translation_used": "Tenga en cuenta: Este sitio web utiliza traducción automática y por lo tanto puede no ser 100% precisa.",
+    "country_flag": "es",
+    "alt_text": "Bandera de España"
+  },
+  "it": {
+    "hi": "Ciao",
+    "software_developer": "Sviluppatore di Software",
+    "machine_translation_used": "Nota: Questo sito web utilizza la traduzione automatica e pertanto potrebbe non essere accurata al 100%.",
+    "country_flag": "it",
+    "alt_text": "Bandiera dell'Italia"
+  },
+  "pt": {
+    "hi": "Oi",
+    "software_developer": "Desenvolvedor de Software",
+    "machine_translation_used": "Atenção: Este site usa tradução automática e pode não ser 100% exato.",
+    "country_flag": "pt",
+    "alt_text": "Bandeira de Portugal"
+  },
+  "ja": {
+    "hi": "こんにちは",
+    "software_developer": "ソフトウェア開発者",
+    "machine_translation_used": "ご注意ください：このウェブサイトは機械翻訳を使用しているため、100% 正確ではない可能性があります。",
+    "country_flag": "jp",
+    "alt_text": "日本の国旗"
+  },
+  "zh": {
+    "hi": "你好",
+    "software_developer": "软件开发者",
+    "machine_translation_used": "请注意：本网站采用机器翻译，可能不是100%准确。",
+    "country_flag": "cn",
+    "alt_text": "中国国旗"
+  },
+  "ko": {
+    "hi": "안녕하세요",
+    "software_developer": "소프트웨어 개발자",
+    "machine_translation_used": "참고: 이 웹사이트는 기계 번역을 사용하므로 100% 정확하지 않을 수 있습니다.",
+    "country_flag": "kr",
+    "alt_text": "대한민국 국기"
+  }
+}
