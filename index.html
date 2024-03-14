@@ -9,33 +9,51 @@
     <script src="card.js" type="application/javascript"></script>
     <script src="https://kit.fontawesome.com/04dd3b23d3.js" crossorigin="anonymous"></script>
 
+    <!-- only for people who were given a business card -->
+    <meta name="robots" content="noindex">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <div id="business-card">
-        <div id="qr">
-            <img alt="QR Code containing a robot sitting at a desk looking at multiple screens." src="00017-2450478646.png">
-            <p id="scan-me">Scan me</p>
+
+    <div id="business-card-wrapper">
+        <div id="business-card">
+            <div id="qr">
+                <img alt="QR Code containing a robot sitting at a desk looking at multiple screens." src="00017-2450478646.png">
+                <p id="scan-me">Scan me</p>
+            </div>
+
+            <div id="card-content">
+                <div id="select-with-email">
+                    <div id="select">
+                        <input type="hidden" id="select-value" value="en">
+                        <div id="select-options" class="open">
+                        </div>
+                        <div id="select-current">
+                            <img alt="" class="flag" src="">
+                            <p class="value"></p>
+                            <i id="caret" class="fa-sharp fa-solid fa-caret-up"></i>
+                        </div>
+                    </div>
+                    <p id="email-domain">@conorhow.land</p>
+                </div>
+                <p id="name">Conor Howland</p>
+                <p id="job-title">Software Developer</p>
+            </div>
         </div>
 
-        <div id="card-content">
-            <div id="select-with-email">
-                <div id="select">
-                    <input type="hidden" id="select-value" value="en">
-                    <div id="select-options" class="open">
-                    </div>
-                    <div id="select-current">
-                        <img alt="" class="flag" src="">
-                        <p class="value"></p>
-                        <i id="caret" class="fa-sharp fa-solid fa-caret-up"></i>
-                    </div>
-                </div>
-                <p id="email-domain">@conorhow.land</p>
-            </div>
-            <p id="name">Conor Howland</p>
-            <p id="job-title">Software Developer</p>
+        <p id="machine-translation"></p>
+
+        <div class="link-list">
+            <a id="blog-link" href="https://conorhowland.com/">Blog</a>
+            <a id="website-link" href="https://conorhow.land">Website</a>
+            <a href="https://github.com/CADawg">GitHub</a>
+            <a href="https://www.linkedin.com/in/conor-howland/">LinkedIn</a>
         </div>
-        <p id="machine-translation-used"></p>
+
+        <div class="link-list">
+            <a id="mailto-link" href="#">Email Me</a>
+        </div>
     </div>
 </body>
 </html>

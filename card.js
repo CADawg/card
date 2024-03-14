@@ -1,6 +1,6 @@
 /**
  * translations loads translations from translations.json
- * @type {{hi: string, software_developer: string, machine_translation_used: string, country_flag: string, alt_text: string, flag_url: string, scan_me: string}}
+ * @type {{hi: string, software_developer: string, machine_translation_used: string, country_flag: string, alt_text: string, flag_url: string, scan_me: string, blog: string, website: string, email_me: string}}
  */
 let translations = {};
 let translationElements = {};
@@ -16,6 +16,11 @@ let currentDropdownValue;
 let currentDropdownFlag;
 let scanMe;
 let isDropdownOpen = true;
+let machineTranslationUsed;
+let mailToLink;
+let blogLink;
+let websiteLink;
+let visitedBefore = false;
 
 window.addEventListener("load", async function() {
     translations = await (await fetch("translations.json")).json();
@@ -28,15 +33,42 @@ window.addEventListener("load", async function() {
     currentDropdownFlag = document.querySelector("#select-current>img.flag");
     currentDropdownValue = document.querySelector("#select-current>p.value");
     scanMe = document.querySelector("#scan-me");
+    machineTranslationUsed = document.querySelector("#machine-translation");
+    mailToLink = document.querySelector("#mailto-link");
+    blogLink = document.querySelector("#blog-link");
+    websiteLink = document.querySelector("#website-link");
+
+    if (localStorage.getItem("visitedBefore") === "true") {
+        visitedBefore = true;
+        selectDropdown.classList.remove("open");
+        isDropdownOpen = false;
+    } else {
+        localStorage.setItem("visitedBefore", "true");
+    }
 
     let preferredTranslation = "en";
 
     // get user's most preferred languages
     for (let i = 0; i < navigator.languages.length; i++) {
-        if (navigator.languages[i] in Object.keys(translations)) {
+        if (Object.keys(translations).includes(navigator.languages[i])) {
             preferredTranslation = navigator.languages[i];
         }
     }
+
+    let prevTranslation = localStorage.getItem("preferredTranslation");
+
+    console.log("Previous translation: " + prevTranslation);
+    console.log(Object.keys(translations));
+
+    console.log(prevTranslation in Object.keys(translations))
+
+    if (Object.keys(translations).includes(prevTranslation)) {
+        console.log("Using previous translation.")
+        console.log(prevTranslation);
+        preferredTranslation = prevTranslation;
+    }
+
+    localStorage.setItem("preferredTranslation", preferredTranslation);
 
     renderDropdownList(preferredTranslation);
 
@@ -117,6 +149,15 @@ function onLanguageChange(lang, skipSelectedCheck = false) {
     // need to update the bottom element (#select-current)
     currentDropdownFlag.src = newElem.imgSrc;
     currentDropdownValue.textContent = newElem.text;
+
+    mailToLink.href = `mailto:${translations[lang].hi.toLowerCase()}@conorhow.land?subject=${translations[lang].hi}`;
+
+    machineTranslationUsed.textContent = translations[lang].machine_translation_used;
+    websiteLink.textContent = translations[lang].website;
+    blogLink.textContent = translations[lang].blog;
+    mailToLink.textContent = translations[lang].email_me;
+
+    localStorage.setItem("preferredTranslation", lang);
 }
 
 /**

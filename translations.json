@@ -2,11 +2,14 @@
   "en": {
     "hi": "Hi",
     "software_developer": "Software Developer",
-    "machine_translation_used": "Please Note: This website uses machine translation and so may not be 100% accurate.",
+    "machine_translation_used": "",
     "country_flag": "gb",
     "alt_text": "Flag of the United Kingdom",
     "flag_url": "https://flagsapi.com/GB/flat/64.png",
-    "scan_me": "Scan Me"
+    "scan_me": "Scan Me",
+    "email_me": "Email Me",
+    "blog": "Blog",
+    "website": "Website"
   },
   "gd": {
     "hi": "Halo",
@@ -15,7 +18,10 @@
     "country_flag": "gb-sct",
     "alt_text": "Bratach na Rìoghachd Aonaichte",
     "flag_url": "./flags/gb-sct.svg",
-    "scan_me": "Sganadh Mi"
+    "scan_me": "Sganadh Mi",
+    "email_me": "Post-d Mi",
+    "blog": "Blog",
+    "website": "Làrach-lìn"
   },
   "fr": {
     "hi": "Salut",
@@ -24,7 +30,10 @@
     "country_flag": "fr",
     "alt_text": "Drapeau de la France",
     "flag_url": "https://flagsapi.com/FR/flat/64.png",
-    "scan_me": "Scannez-moi"
+    "scan_me": "Scannez-moi",
+    "email_me": "Envoyez-moi un e-mail",
+    "blog": "Blog",
+    "website": "Site Web"
   },
   "nl": {
     "hi": "Hallo",
@@ -33,7 +42,10 @@
     "country_flag": "nl",
     "alt_text": "Vlag van Nederland",
     "flag_url": "https://flagsapi.com/NL/flat/64.png",
-    "scan_me": "Scan Mij"
+    "scan_me": "Scan Mij",
+    "email_me": "E-mail Mij",
+    "blog": "Blog",
+    "website": "Website"
   },
   "de": {
     "hi": "Hallo",
@@ -42,8 +54,10 @@
     "country_flag": "de",
     "alt_text": "Flagge Deutschlands",
     "flag_url": "https://flagsapi.com/DE/flat/64.png",
-    "scan_me": "Scannen Sie mich"
-  },
+    "scan_me": "Scannen Sie mich",
+    "email_me": "E-Mail an mich",
+    "blog": "Blog",
+    "website": "Webseite"},
   "es": {
     "hi": "Hola",
     "software_developer": "Desarrollador de Software",
@@ -51,7 +65,10 @@
     "country_flag": "es",
     "alt_text": "Bandera de España",
     "flag_url": "https://flagsapi.com/ES/flat/64.png",
-    "scan_me": "Escanéame"
+    "scan_me": "Escanéame",
+    "email_me": "Envíame un correo electrónico",
+    "blog": "Blog",
+    "website": "Sitio Web"
   },
   "it": {
     "hi": "Ciao",
@@ -60,7 +77,10 @@
     "country_flag": "it",
     "alt_text": "Bandiera dell'Italia",
     "flag_url": "https://flagsapi.com/IT/flat/64.png",
-    "scan_me": "Scansionami"
+    "scan_me": "Scansionami",
+    "email_me": "Inviami un'email",
+    "blog": "Blog",
+    "website": "Sito Web"
   },
   "pt": {
     "hi": "Oi",
@@ -69,7 +89,10 @@
     "country_flag": "pt",
     "alt_text": "Bandeira de Portugal",
     "flag_url": "https://flagsapi.com/PT/flat/64.png",
-    "scan_me": "Escaneie-me"
+    "scan_me": "Escaneie-me",
+    "email_me": "Envie-me um e-mail",
+    "blog": "Blog",
+    "website": "Site"
   },
   "zh": {
     "hi": "Nihao",
@@ -78,6 +101,9 @@
     "country_flag": "cn",
     "alt_text": "中国国旗",
     "flag_url": "https://flagsapi.com/CN/flat/64.png",
-    "scan_me": "扫描我"
+    "scan_me": "扫描我",
+    "email_me": "给我发邮件",
+    "blog": "博客",
+    "website": "网站"
   }
 }
